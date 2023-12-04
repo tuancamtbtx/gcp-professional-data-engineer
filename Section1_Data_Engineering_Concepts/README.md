@@ -67,3 +67,16 @@ A[Ingestion] -->B(Storage) --> C(Process and analyze) --> D(Explre and visualize
  - Image
  - Natural language
  - In GCP: Google cloud storage, 
+
+ ## Batch Data and Streaming
+ 1. Batch Data:
+  - Defined start and end of data - data size is known
+  - Processing high volume of data after certain periodic interval
+  - Long time to processing data
+  - Payment processing
+ 2. Streaming:
+  - Unbounded, No end defined
+  - Data is processed as it is arrives
+  - Size of data is unknown
+  - No much heavy processing - take mili-second to process
+  - Stock data processing
