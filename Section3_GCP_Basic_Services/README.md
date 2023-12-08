@@ -26,6 +26,3 @@ Google Cloud Platform (GCP) offers several basic infrastructure services to supp
    - **Cloud Source Repositories**: Hosted private Git repositories for storing, managing, and tracking changes to code.
 
 These basic infrastructure services form the foundation for building and deploying applications on Google Cloud Platform, providing essential computing, storage, networking, and development tools to support a wide range of use cases.
-
-## IAM
-## 
