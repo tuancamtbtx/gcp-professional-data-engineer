@@ -21,12 +21,6 @@ To deploy a Node.js application to Google Cloud Run, you can follow these genera
      # Copy the application code
      COPY . .
 
-     # Set the port
-     ENV PORT=3000
-
-     # Expose the port
-     EXPOSE 3000
-
      # Command to run the application
      CMD ["node", "index.js"]
      ```
