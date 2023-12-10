@@ -4,4 +4,4 @@ FROM node:14
 WORKDIR /usr/src/app
 COPY . .
 # Command to run the application
-CMD ["node", "app.js"]
+CMD ["node", "index.js"]
