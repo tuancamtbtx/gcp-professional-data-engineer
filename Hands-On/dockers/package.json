@@ -1,0 +1,11 @@
+{
+  "name": "dockers",
+  "version": "1.0.0",
+  "description": "To build a Docker image and push it to Google Container Registry (GCR), here's a basic guide that you can include in a README file:",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
