@@ -1,0 +1,15 @@
+{
+  "name": "app_enginee",
+  "version": "1.0.0",
+  "description": "To deploy an application to Google Cloud Platform's (GCP) App Engine, you can use the `gcloud` command-line tool. Below are the basic steps to deploy your application:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "author": "",
+  "license": "ISC"
+}
