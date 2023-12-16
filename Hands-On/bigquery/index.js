@@ -47,11 +47,11 @@ const rows = {
 const { BigQuery } = require('@google-cloud/bigquery');
 
 // Create a new BigQuery client
-const bigquery = new BigQuery({projectId: "YOUR_PROJECT_ID"});
+const bigquery = new BigQuery({projectId: ""});
 
 // Define the dataset and table names
 const datasetId = 'tuan_test';
-const tableId = 'test_table_struct_schema_1';
+const tableId = 'test_table_struct_schema';
 
 async function createTable() {
     const [table] = await bigquery
@@ -59,6 +59,21 @@ async function createTable() {
         .createTable(tableId, {
           schema: schema
         });
+    return table
+}
+async function updateTable() {
+    const [table] = await bigquery
+        .dataset(datasetId)
+        .table(tableId)
+        .get();
+    
+    const newSchema = table.metadata.schema.fields.filter(field => field.name !== 'name');
+    await bigquery
+    .dataset(datasetId)
+    .table(tableId)
+    .setMetadata({
+      schema: newSchema
+    });
     return table
 }
 // Insert the data into the specified table
@@ -77,4 +92,35 @@ async function insertNestedData() {
   }
   
   // Call the function to insert the data
-insertNestedData();
+
+const newSchema = [
+    {
+      name: 'id',
+      type: 'INTEGER'
+    },
+    {
+      name: 'details',
+      type: 'RECORD',
+      fields: [
+        {
+          name: 'age',
+          type: 'INTEGER'
+        },
+        {
+          name: 'address',
+          type: 'RECORD',
+          fields: [
+            {
+              name: 'city',
+              type: 'STRING'
+            },
+            {
+              name: 'zip',
+              type: 'STRING'
+            }
+          ]
+        }
+      ]
+    }
+  ];
+updateTable();
