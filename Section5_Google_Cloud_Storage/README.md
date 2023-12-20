@@ -1,7 +1,19 @@
 # Google Cloud Storage
 
 ## Storage Location
+Here's a table representing the requirements, recommended bucket locations, and workload examples:
 
+| Requirements                          | Recommended Bucket Location | Workload Examples                           |
+|---------------------------------------|------------------------------|---------------------------------------------|
+| Optimized latency and bandwidth       | Regional                     | Analytics, Backup and archive               |
+| Lowest data storage cost              | Regional                     | Analytics, Backup and archive               |
+| Cross-zone redundancy                 | Regional                     | Analytics, Backup and archive               |
+| Optimized latency and bandwidth       | Dual-region                  | Analytics, Backup and archive, Disaster recovery |
+| Cross-region redundancy                | Dual-region                  | Analytics, Backup and archive, Disaster recovery |
+| Cross-geography data access           | Multi-region                 | Content serving                              |
+| Highest availability                  | Multi-region                 | Content serving                              |
+
+This table outlines the requirements, the recommended bucket locations, and typical workload examples associated with each requirement.
 ## Storage Class
 Here's the provided information organized in a table format:
 
