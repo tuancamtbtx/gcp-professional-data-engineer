@@ -23,5 +23,7 @@ Here's the provided information organized in a table format:
 | Nearline storage | NEARLINE | 30 days | Yes | 99.95% in multi-regions and dual-regions, 99.9% in regions |
 | Coldline storage | COLDLINE | 90 days | Yes | 99.95% in multi-regions and dual-regions, 99.9% in regions |
 | Archive storage | ARCHIVE | 365 days | Yes | 99.95% in multi-regions and dual-regions, 99.9% in regions |
+Storage options
+
 
 This table summarizes the storage classes in Google Cloud Storage, including their respective names for APIs and CLIs, minimum storage duration, retrieval fees, and typical monthly availability.
