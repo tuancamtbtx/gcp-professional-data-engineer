@@ -44,7 +44,17 @@
 
 
 ## Knowledge Area: Database
+A developer is deploying a Cloud SQL database to production and wants to follow Google Cloud recommended best practices. What should the developer use for authentication?
+ - [ ] Cloud SQL Proxy
+ - [ ] Strong encryption
+ - [ ] IAM
+ - [ ] Cloud Identify
+ ### Explaination
+`
+Cloud SQL Auth proxy is the recommended way to connect to Cloud SQL. Cloud Identity is an Identity as a Service provided by Google Cloud. IAM is Identity and Access Management service for managing identities and their authorizations. Strong encryption is used to protect the confidentiality and integrity of data, not to perform authentication. See https://cloud.google.com/sql/docs/mysql/sql-proxy
 
+
+`
 ## Knowledge Area: Data Pipelines
 
 ## Knowledge Area: Access Control
