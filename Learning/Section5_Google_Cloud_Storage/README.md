@@ -73,3 +73,10 @@ Key features of GCS Object Lifecycle Management include:
    - Object Lifecycle Management supports transitioning objects between different storage classes, enabling cost optimization based on access patterns.
 
 By using Object Lifecycle Management in GCS, you can effectively manage your storage costs, automate data retention policies, and ensure that objects are stored in the most cost-effective and operationally efficient manner throughout their lifecycle.
+
+## Google Cloud Storage Pricing
+Cloud Storage pricing is based on the following components:
+
+**Data storage:** the amount of data stored in your buckets. Storage rates vary depending on the storage class of your data and location of your buckets.
+**Data processing:** the processing done by Cloud Storage, which includes operations charges, any applicable retrieval fees, and inter-region replication.
+**Network usage:** the amount of data read from or moved between your buckets.

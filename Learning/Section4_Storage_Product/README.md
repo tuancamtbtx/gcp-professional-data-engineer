@@ -26,3 +26,4 @@ Google Cloud Platform (GCP) offers various storage products to cater to differen
 - **Typical Use**: Analyzing large datasets, storing time-series data, and powering machine learning and analytics workloads.
 
 Each of these storage products caters to different requirements and workloads, offering a variety of features and capabilities to address diverse data storage needs within the Google Cloud Platform ecosystem.
+
